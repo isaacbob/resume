@@ -1,0 +1,96 @@
+% Isaac Tetzloff
+%    One Page Resume
+%    Last Updated: 18 Mar 2019
+
+\documentclass[10pt,letterpaper]{moderncv}        
+	\moderncvstyle{oldstyle}
+	\moderncvcolor{blue}    
+
+% Packages, Sizing, and Customization
+\usepackage[scale=0.87]{geometry}
+\usepackage{fontawesome}
+	\renewcommand*{\mobilephonesymbol}{\faPhone~}
+	\renewcommand*{\emailsymbol}{{\faEnvelopeO}~} 
+	\renewcommand*{\linkedinsocialsymbol}{{\faLinkedinSquare}~} 
+	\renewcommand*{\githubsocialsymbol}{{\faGithub}~}
+\usepackage{xpatch}
+	\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
+\nopagenumbers{}
+\fancyfoot[R]{\color{color2}Last Updated: \today}
+
+% Personal Data
+\name{Isaac J.}{Tetzloff}
+\address{940 Purcell Dr}{Plano, TX 75025}
+\phone[mobile]{765.414.3213}      
+\email{isaacbob@gmail.com}
+\social[linkedin]{isaacbob}
+\social[github]{isaacbob}
+
+% Begin Document
+\begin{document}
+
+% Make Title
+\makecvtitle
+
+% Experience
+\section{Experience}
+
+% American Airlines
+\subsection{American Airlines -- Fort Worth, TX}
+\cventry{02/2015 - Present}{Consultant}{Operations Research \& Advanced Analytics}{}{}{
+	\begin{itemize}
+		\item Developed and maintain the optimization engine for Daily Open Time Coverage/Reserve Assignment System (DOTC/RAS), ensuring the optimal solution maintains contractual obligations while optimizing pilot preferences
+		\item Create Tableau dashboards used by multiple airports and business units to provide information about gate changes, spare crew staffing, airport congestion and gate check bags
+		\item Assist in the development of simulation models and analyses for flight dispatchers and terminal bag room operations to perform a variety of what-if scenarios for planning and policy creation
+		\item Perform many ad hoc analyses for a variety of airports and business units ranging from baggage data, flight service delay prediction, turn time analysis, baggage pier assignments, schedule changes, predicted taxi times, and assignment of crews for recurrent training
+		\end{itemize}}
+
+% Purdue University
+\subsection{Purdue University -- West Lafayette, IN}
+\cventry{08/2007 - 01/2015}{Graduate Research Assistant}{School of Aeronautics and Astronautics}{}{}{
+	\begin{itemize}
+		\item Developed Fleet Level Environment Evaluation Tool (FLEET) to assess the impact of current and future aircraft on fleet-level emissions using mixed integer linear programming based on resource allocation and fleet assignment problems
+		\item Expanded original FLEET model to handle additional airports, aircraft models, airlines and objectives
+		\item Examined impact of future supersonic aircraft on fleet-level emissions and productivity
+		\item Awarded the NASA Graduate Student Researchers Project (GSRP) and the Purdue Forever Fellowships
+	\end{itemize}}
+\cventry{01/2013 - 06/2014}{Instructor}{School of Engineering Education}{}{}{
+	\begin{itemize}
+		\item Served as instructor for ENGR 132 Transforming Ideas to Innovation II, one of two core courses in Purdue's First Year Engineering Program
+		\item Developed course material and curriculum for solving complex problems from formulation to implementation in a team-based environment using Excel and MATLAB
+		\item Awarded the Estus H. and Vashti L. Magoon Award for Graduate Student Instructors
+		\item Earned an Advanced Graduate Teaching Certificate from the Purdue Center for Instructional Excellence
+	\end{itemize}} 
+
+% Orbital Sciences
+\subsection{Orbital Sciences Corporation -- Dulles, VA}
+\cventry{Summer 2006, 2007 \& 2011}{Engineering Intern}{}{}{}{
+	\begin{itemize}
+		\item Performed systems engineering tasks on the Cygnus space vehicle as part of the COTS/CRS Program, including evaluating and implementing a Test Like You Fly philosophy into Cygnus testing procedures (2011)
+		\item Modeled multiple-flexible-body systems within MATLAB and Simulink for use in future satellite designs (2007)
+		\item Developed a software tool using MATLAB and STK/Connect rapid re-planning of a sequence of burns to bring a spacecraft from a geosynchronous transfer orbit to a geostationary orbit (2006)	
+	\end{itemize}}
+
+% Education
+\section{Education}
+
+% Purdue University
+\subsection{Purdue University -- West Lafayette, IN}
+\cventry{05/2010 - Present}{Doctor of Philosophy}{Aeronautics and Astronautics}{}{}{
+	\begin{itemize}
+		\item PhD research being completed in absentia, anticipated completion 12/2019
+	\end{itemize}}  
+\cventry{05/2010 - 05/2013}{Master of Science}{Industrial Engineering}{}{}{}  
+\cventry{08/2007 - 05/2010}{Master of Science}{Aeronautics and Astronautics}{}{}{}  
+
+% MIT
+\subsection{Massachusetts Institute of Technology -- Cambridge, MA}
+\cventry{09/2003 - 06/2007}{Bachelor of Science}{Aerospace Engineering with Information Technology}{}{}{}  
+\cventry{09/2003 - 06/2007}{Bachelor of Science}{Management Science}{}{}{}  
+
+% Skills
+\section{Technical Skills}
+\cvitem{Advanced}{Java, \LaTeX, MATLAB, Microsoft Office, SAS, SQL, Tableau}
+\cvitem{Intermediate}{Gurobi, Python, R, Simio, Simulink, Xpress}
+
+\end{document}
