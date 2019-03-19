@@ -16,6 +16,7 @@
 \usepackage{xpatch}
 	\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
 \renewcommand{\refname}{Journal Articles}
+	\makeatletter	\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}	\makeatother
 \nopagenumbers{}
 	\fancyfoot[R]{\color{color2}Last Updated: \today}
 
@@ -121,26 +122,29 @@
 
 % Affiliations
 \section{Affiliations}
-\cvitemwithcomment{}{Airline Group of the International Federation of Operational Research Societies}{Member}
-\cvitemwithcomment{}{Delta Tau Delta International Fraternity}{Beta Nu Chapter, MIT}
-\cvitemwithcomment{}{Order of Omega Greek Honor Society}{MIT Chapter}
-\cvitemwithcomment{}{Sigma Gamma Tau Aerospace Engineering Honor Society}{Alpha Chapter, Purdue}
-\cvitemwithcomment{}{Tau Beta Pi Engineering Honor Society}{Indiana-Alpha Chapter, Purdue}
+\cvitemwithcomment{}{Airline Group of the International Federation of Operational Research Societies}{(2016 - Present)}
+\cvitemwithcomment{}{American Institute of Aeronautics and Astronautics (AIAA)}{(2003 - 2016)}
+\cvitemwithcomment{}{Institute for Operations Research and the Management Sciences (INFORMS)}{(2008 - 2016)}
+\cvitemwithcomment{}{Society for Industrial and Applied Mathematics (SIAM)}{(2009 - 2014)}
+\cvitemwithcomment{}{Tau Beta Pi Engineering Honor Society}{Indiana-Alpha Chapter, Purdue (2008)}
+\cvitemwithcomment{}{Sigma Gamma Tau Aerospace Engineering Honor Society}{Alpha Chapter, Purdue (2007)}
+\cvitemwithcomment{}{Order of Omega Greek Honor Society}{MIT Chapter (2007)}
+\cvitemwithcomment{}{Delta Tau Delta International Fraternity}{Beta Nu Chapter, MIT (2003)}
 
 % Volunteering
 \section{Volunteering}
-\cvitemwithcomment{}{MIT Alumni Association}{Educational Counselor (2007 - Present)}
-\cvitemwithcomment{}{MIT Alumni Association}{Class of 2007 Treasurer (2012 - Present )}
+\cvitemwithcomment{}{MIT Alumni Association, Educational Counselor}{(2007 - Present)}
+\cvitemwithcomment{}{MIT Alumni Association, Class of 2007 Treasurer}{(2012 - Present)}
 
 % Leadership
 \section{Leadership}
-\cvitemwithcomment{}{Aero Assist Graduate Student Organization}{Treasurer (2010 - 2013)}
-\cvitemwithcomment{}{Sigma Gamma Tau}{Treasurer (2008 - 2009)}
-\cvitemwithcomment{}{MIT Interfraternity Council (IFC)}{President (2005 - 2006)}
-\cvitemwithcomment{}{MIT Interfraternity Council (IFC)}{Executive Assistant (2004 - 2005)}
-\cvitemwithcomment{}{MIT Undergraduate Advising and Academic Programming}{Associate Advisor (2004 - 2007)}
-\cvitemwithcomment{}{Delta Tau Delta Fraternity}{Risk Manager (2006 - 2007)}
-\cvitemwithcomment{}{Delta Tau Delta Fraternity}{New Member Educator (2004 - 2006)}
+\cvitemwithcomment{}{Aero Assist Graduate Student Organization, Treasurer}{(2010 - 2013)}
+\cvitemwithcomment{}{Sigma Gamma Tau, Treasurer}{(2008 - 2009)}
+\cvitemwithcomment{}{MIT Interfraternity Council (IFC), President}{(2005 - 2006)}
+\cvitemwithcomment{}{MIT Interfraternity Council (IFC), Executive Assistant}{(2004 - 2005)}
+\cvitemwithcomment{}{MIT Undergraduate Advising and Academic Programming, Associate Advisor}{(2004 - 2007)}
+\cvitemwithcomment{}{Delta Tau Delta Fraternity, Risk Manager}{(2006 - 2007)}
+\cvitemwithcomment{}{Delta Tau Delta Fraternity, New Member Educator}{(2004 - 2006)}
 
 % End Document
 \end{document}
