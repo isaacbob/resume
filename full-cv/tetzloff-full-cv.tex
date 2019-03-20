@@ -1,0 +1,253 @@
+% Isaac Tetzloff
+%    Curriculum Vitae
+%    Last Updated: 19 Mar 2019
+
+\documentclass[10pt,letterpaper]{moderncv}        
+	\moderncvstyle{classic}
+	\moderncvcolor{red}    
+
+% Packages, Sizing, and Customization
+\usepackage[light, math]{kurier}
+\usepackage[scale=0.87]{geometry}
+	\setlength{\hintscolumnwidth}{2.35cm}
+\usepackage{fontawesome}
+	\renewcommand*{\mobilephonesymbol}{\faPhone~}
+	\renewcommand*{\emailsymbol}{{\faEnvelopeO}~} 
+	\renewcommand*{\linkedinsocialsymbol}{{\faLinkedinSquare}~} 
+	\renewcommand*{\githubsocialsymbol}{{\faGithub}~}
+\usepackage{xpatch}
+	\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
+\usepackage{lastpage}
+	\nopagenumbers{}
+	\fancyfoot[L]{\color{color2}Isaac J. Tetzloff}
+	\fancyfoot[R]{\color{color2}Curriculum Vitae -- \thepage\ of \pageref{LastPage}}
+\usepackage[resetlabels]{multibib}
+	\newcites{journal,conference,presentation,thesis}{{Journal Articles},{Conference Papers},{Technical Presentations},{Theses}}
+	\makeatletter	\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}	\makeatother
+\usepackage{fixltx2e}
+	\newcommand{\COtwo}{CO\textsubscript{2} }
+\renewcommand*{\titlestyle}[1]{{\titlefont\textcolor{color1}{#1}}}
+
+% Personal Data
+\name{Isaac J.}{Tetzloff}
+\title{Curriculum Vitae}
+\address{940 Purcell Dr}{Plano, TX 75025}
+\phone[mobile]{765.414.3213}      
+\email{isaacbob@gmail.com}
+%\homepage{www.isaacbob.com}
+\social[linkedin]{isaacbob}
+\social[github]{isaacbob}
+%\social[twitter]{isaacbob}
+
+% Begin Document
+\begin{document}
+
+% Make Title and Remove White Some White Space
+\makecvtitle
+	\vspace{-7.5mm}
+
+% Education
+\section{Education}
+
+% Purdue University
+\subsection{Purdue University -- West Lafayette, IN}
+
+% PhD AAE
+\cventry{2010 to Present}{Doctor of Philosophy}{Aeronautics and Astronautics}{}{}{
+	\textbf{PhD research being completed in absentia, anticipated completion 12/2019}
+	\begin{itemize}
+		\item \textbf{Dissertation:} \emph{Formulating an Allocation and Assignment Problem to Evaluate the Fleet-Level Environmental Impact of Aviation}
+		\item \textbf{Advisor:} Prof. William A. Crossley
+		\item \textbf{Major Area of Study:} Aerospace Systems
+		\item \textbf{Minor Areas of Study:} Computational Engineering, Dynamics and Control
+		\item \textbf{GPA:} 3.99 / 4.00
+	\end{itemize}}  
+
+% MSIE
+\cventry{2010 to 2013}{Master of Science}{Industrial Engineering}{}{}{
+	\begin{itemize}
+		\item \textbf{Major Area of Study:} Operations Research
+		\item \textbf{GPA:} 4.00 / 4.00
+	\end{itemize}}  
+
+% MSAA
+\cventry{2007 to 2010}{Master of Science}{Aeronautics and Astronautics}{}{}{
+	\begin{itemize}
+		\item \textbf{Thesis:} \emph{An Allocation Approach to Investigate New Aircraft Concepts and Technologies on Fleet-Level Metrics}
+		\item \textbf{Advisor:} Prof. William A. Crossley
+		\item \textbf{Major Area of Study:} Aerospace Systems
+		\item \textbf{Minor Areas of Study:} Computational Engineering, Dynamics and Control
+		\item \textbf{GPA:} 4.00 / 4.00
+	\end{itemize}}  
+
+% MIT
+\subsection{Massachusetts Institute of Technology -- Cambridge, MA}
+
+% BSAE
+\cventry{2003 to 2007}{Bachelor of Science}{Aerospace Engineering with Information Technology}{}{}{
+	\begin{itemize}
+		\item \textbf{Minor:} Spanish
+		\item \textbf{GPA:} 4.3 / 5.0
+	\end{itemize}}  
+
+% BSMS
+\cventry{2003 to 2007}{Bachelor of Science}{Management Science}{}{}{
+	\begin{itemize}
+		\item \textbf{GPA:} 4.5 / 5.0
+	\end{itemize}}  
+ 
+% Work Experience
+\section{Work Experience}
+
+% American Airlines
+\subsection{American Airlines -- Fort Worth, TX}
+
+% OR Consultant
+\cventry{2015 to Present}{Consultant}{Operations Research \& Advanced Analytics}{}{}{
+	\begin{itemize}
+		\item Developed and maintain the optimization engine for Daily Open Time Coverage/Reserve Assignment System (DOTC/RAS), ensuring the optimal solution maintains contractual obligations while optimizing pilot preferences
+		\item Create Tableau dashboards used by multiple airports and business units to provide information about gate changes, spare crew staffing, airport congestion and gate check bags
+		\item Assist in the development of simulation models and analyses for flight dispatchers and terminal bag room operations to perform a variety of what-if scenarios for planning and policy creation
+		\item Perform many ad hoc analyses for a variety of airports and business units ranging from baggage data, flight service delay prediction, turn time analysis, baggage pier assignments, schedule changes, predicted taxi times, and assignment of crews for recurrent training
+		\end{itemize}}
+
+% Research Experience
+\section{Research Experience}
+
+% Purdue University
+\subsection{Purdue University -- West Lafayette, IN}
+
+% FLEET
+\cventry{2007 to 2015}{Fleet-Level Environmental Impact of New Aircraft Concepts}{School of Aeronautics and Astronautics}{}{}{
+	\begin{itemize}
+		\item Developed Fleet Level Environment Evaluation Tool (FLEET) to assess the impact of current and future aircraft on fleet-level emissions using mixed integer linear programming based on resource allocation and fleet assignment problems
+		\item Expanded original FLEET model to handle additional airports, aircraft models, airlines and objectives
+		\item Examined impact of future supersonic aircraft on fleet-level emissions and productivity
+	\end{itemize}}
+
+% ONR
+\cventry{2012 to 2013}{Impact of Maintenance on Naval Fleet Ownership Cost}{School of Aeronautics and Astronautics}{}{}{
+	\begin{itemize}
+		\item Developed a total ownership cost model to optimize maintenance and operations of Arleigh Burke-class guided missile destroyers
+	\end{itemize}}
+
+% Teaching Experience
+\section{Teaching Experience}
+
+% Purdue University
+\subsection{Purdue University -- West Lafayette, IN}
+
+% ENGR 132 Instructor
+\cventry{2013 to 2014}{Instructor}{School of Engineering Education}{}{}{
+	\begin{itemize}
+		\item Served as instructor for ENGR 132 Transforming Ideas to Innovation II, one of two core courses in Purdue's First Year Engineering Program
+		\item Developed course material and curriculum for solving complex problems from formulation to implementation in a team-based environment using Excel and MATLAB
+	\end{itemize}} 
+
+% AAE 451 / 550 / 551 TA
+\cventry{2008 to 2013}{Graduate Teaching Assistant}{School of Aeronautics and Astronautics}{}{}{
+	\begin{itemize}
+		\item Created, solved and graded homework, assessments and projects for AAE 550 Multidisciplinary Design Optimization, AAE 551 Design Theory and Methods for Aerospace Systems, and AAE 451 Aircraft Design
+	\end{itemize}}  
+
+% Internship Experience
+\section{Internship Experience}
+
+% Orbital Sciences
+\subsection{Orbital Sciences Corporation -- Dulles, VA}
+
+% Orbital Cygnus
+\cventry{2011}{Systems Engineering Intern}{Cygnus / Commercial Orbital Transportation Services Program}{}{}{
+	\begin{itemize}
+		\item Performed systems engineering tasks on the Cygnus space vehicle as part of the Commercial Orbital Transportation Services / Commercial Resupply Services (COTS/CRS) Program, including evaluating and implementing a Test Like You Fly philosophy into Cygnus testing procedures
+	\end{itemize}}
+
+% Orbital GNC
+\cventry{2006 \& 2007}{Engineering Intern}{Guidance, Navigation, and Control (GNC) Design and Analysis}{}{}{
+	\begin{itemize}
+		\item Modeled multiple-flexible-body systems within MATLAB and Simulink for use in future satellite designs
+		\item Developed a software tool using MATLAB and STK/Connect rapid re-planning of a sequence of burns to bring a spacecraft from a geosynchronous transfer orbit to a geostationary orbit
+	\end{itemize}}
+
+% Publications
+\section{Publications}
+
+% Journal Articles
+\nocitejournal{*}
+\bibliographystylejournal{aiaa}
+\bibliographyjournal{tetzloff-pubs-journals}
+
+% Conference Papers
+\nociteconference{*}
+\bibliographystyleconference{aiaa}
+\bibliographyconference{tetzloff-pubs-conferences}   
+
+% Technical Presentations
+\nocitepresentation{*}
+\bibliographystylepresentation{aiaa}
+\bibliographypresentation{tetzloff-pubs-presentations}  
+
+% Theses
+\nocitethesis{*}
+\bibliographystylethesis{aiaa}
+\bibliographythesis{tetzloff-pubs-theses}  
+
+% Certifications
+\section{Certifications}
+\cvitem{2014}{Advanced Graduate Teaching Certificate, Purdue University Center for Instructional Excellence}
+
+% Affiliations
+\section{Professional Affiliations}
+\subsection{Current}
+\cvitem{2015 to Present}{Airline Group of the International Federation of Operational Research Societies (AGIFORS)}
+\subsection{Former}
+\cvitem{2003 to 2016}{American Institute of Aeronautics and Astronautics (AIAA)}
+\cvitem{2008 to 2016}{Institute for Operations Research and the Management Sciences (INFORMS)}
+\cvitem{2009 to 2014}{Society for Industrial and Applied Mathematics (SIAM)}
+\subsection{Fraternal Organizations and Honor Societies}
+\cvitem{2008}{Tau Beta Pi Engineering Honor Society, Indiana-Alpha Chapter, Purdue University}
+\cvitem{2007}{Sigma Gamma Tau Aerospace Engineering Honor Society, Alpha Chapter, Purdue University}
+\cvitem{2007}{Order of Omega Greek Honor Society, MIT Chapter}
+\cvitem{2003}{Delta Tau Delta International Fraternity, Beta Nu Chapter, MIT}
+
+% Awards
+\section{Awards}
+\cvitem{2014}{Estus H. and Vashti L. Magoon Award, Award for Graduate Student Instructors}
+\cvitem{2011 to 2013}{Purdue University School of Aeronautics and Astronautics Forever Fellowship}
+\cvitem{2009 to 2012}{NASA Graduate Student Researchers Project (GSRP) Fellowship Award}
+\cvitem{2010}{School of Aeronautics and Astronautics Research Symposium Series Best Abstract}
+\cvitem{2007}{MIT Stewart Award, Institute Award for Contributions to Student Life}
+\cvitem{2007}{MIT FSILG Senior Legacy Award, Student Life Award for Contributions to Greek Life}
+
+% Professional Development
+\section{Professional Development}
+\cvitem{2014}{College Teaching Workshops, Purdue University Center for Instructional Excellence}
+\cvitem{2014}{Preparing Future Faculty, Purdue University Graduate School}
+
+% Volunteering
+\section{Volunteering}
+\cvitem{2007 to Present}{MIT Alumni Association, Educational Counselor}
+\cvitem{2012 to Present}{MIT Alumni Association, Class of 2007 Treasurer}
+
+\clearpage
+
+% Leadership
+\section{Leadership}
+\cvitem{2010 to 2013}{Aero Assist Graduate Student Organization, Treasurer}
+\cvitem{2008 to 2009}{Sigma Gamma Tau, Treasurer}
+\cvitem{2005 to 2006}{MIT Interfraternity Council (IFC), President}
+\cvitem{2004 to 2005}{MIT Interfraternity Council (IFC), Executive Assistant}
+\cvitem{2004 to 2007}{MIT Undergraduate Advising and Academic Programming, Associate Advisor}
+\cvitem{2006 to 2007}{Delta Tau Delta Fraternity, Risk Manager}
+\cvitem{2004 to 2006}{Delta Tau Delta Fraternity, New Member Educator}
+
+% Skills
+\section{Technical Skills}
+\cvitem{Advanced}{Java, \LaTeX, MATLAB, Microsoft Office, SAS, SQL, Tableau}
+\cvitem{Intermediate}{Gurobi, Python, R, Simio, Simulink, Xpress}
+
+% Last Updated Date
+\center{Last Updated: \today}
+
+% End Document
+\end{document}
